@@ -24,6 +24,7 @@ $:.unshift(File.dirname(__FILE__) + "/../../lib/")
 
 require 'test/unit'
 require 'feed_validator/assertions'
+require 'digest/md5'
 
 class FeedValidatorAssertionsTest < Test::Unit::TestCase
   
@@ -40,7 +41,7 @@ class FeedValidatorAssertionsTest < Test::Unit::TestCase
     # testing the cache using an invalid feed with a success response cached
     fragment_feed = ">--invalid feed--<"    
     response = File.open File.dirname(__FILE__) + "/../responses/success_with_warnings" do |f| Marshal.load(f) end
-    filename = File.join Dir::tmpdir, 'feed.' + MD5.md5(fragment_feed).to_s
+    filename = File.join Dir::tmpdir, 'feed.' + Digest::MD5.hexdigest(fragment_feed).to_s
     File.open filename, 'w+' do |f| Marshal.dump response, f end
     assert_valid_feed(fragment_feed)  
   end

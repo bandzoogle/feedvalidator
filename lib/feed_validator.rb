@@ -28,6 +28,7 @@ require 'net/http'
 require 'cgi'
 require 'rexml/document'
 
+
 module W3C
 
   # Implements an interface to the {W3C Feed Validation online service}[http://validator.w3.org/feed/], 
@@ -39,7 +40,7 @@ module W3C
   # so do not abuse it: you should make your scripts sleep between requests.
   #
   class FeedValidator
-    VERSION = "0.1.1"
+    VERSION = "0.2.0"
 
     # True if the w3c feed validation service not found errors in the feed.
     #
@@ -80,7 +81,8 @@ module W3C
       clear
       params = "rawdata=#{CGI.escape(rawdata)}&manual=1&output=soap12"
       begin
-        headers = ::VERSION == "1.8.4" ? {'Content-Type'=>'application/x-www-form-urlencoded'} : {}
+#        headers = VERSION == "1.8.4" ? {'Content-Type'=>'application/x-www-form-urlencoded'} : {}
+        headers = {'Content-Type'=>'application/x-www-form-urlencoded'}
         @response = Net::HTTP.start('validator.w3.org',80) {|http|
           http.post('/feed/check.cgi',params,headers)
         } 
@@ -88,6 +90,7 @@ module W3C
         warn "Exception: #{e.class}: #{e.message}\n\t#{e.backtrace.join("\n\t")}" if $VERBOSE
         return false
       end
+
       parse_response(@response.body)
       return true
     end

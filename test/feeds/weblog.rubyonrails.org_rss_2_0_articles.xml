@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet href="/stylesheets/rss.css" type="text/css"?>
-<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:trackback="http://madskills.com/public/xml/rss/module/trackback/">
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:trackback="http://madskills.com/public/xml/rss/module/trackback/"
+     xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
+    <atom:link href="http://weblog.rubyonrails.com/rss.xml" rel="self" type="application/rss+xml" />
     <title>Riding Rails</title>
     <link>http://weblog.rubyonrails.com/</link>
     <language>en-us</language>
@@ -30,7 +33,7 @@
 	&lt;p&gt;Six months from now? The first annual &lt;a href="http://railsconf.org"&gt;Rails Conference&lt;/a&gt;. The next half year promises to be interesting. See you there.&lt;/p&gt;</description>
       <pubDate>Wed, 01 Feb 2006 05:50:00 +0000</pubDate>
       <guid isPermaLink="false">urn:uuid:967e9c30-7e78-4701-b9d4-bbf733495e87</guid>
-      <author></author>
+      <author>foo@bar.com (Author)</author>
       <link>http://weblog.rubyonrails.com/articles/2006/02/01/secrets-behind-ruby-on-rails-the-numbers</link>
       <category>Horizon</category>
       <category>Sightings</category>
@@ -41,7 +44,7 @@
       <description>&lt;p&gt;The &lt;a href="http://www.litespeedtech.com/"&gt;LiteSpeed Web Server&lt;/a&gt; is a commercial engine made to be largely config-compatible with Apache, but promising massive speed increases. If the web server is the bottleneck in your setup, you may just want to give it a look. And what better way than to get your Rails application up and running on it. Bob Silva explains &lt;a href="http://www.railtie.net/articles/2006/01/21/up-and-running-in-the-speed-of-light"&gt;in easy steps how&lt;/a&gt;.&lt;/p&gt;</description>
       <pubDate>Thu, 26 Jan 2006 15:52:05 +0000</pubDate>
       <guid isPermaLink="false">urn:uuid:bc8abcda-7759-4f1d-92d3-e5c0cc736d7a</guid>
-      <author>David</author>
+      <author>foo@bar.com (David)</author>
       <link>http://weblog.rubyonrails.com/articles/2006/01/26/running-rails-on-the-litespeed-webserver</link>
       <category>Sightings</category>
       <trackback:ping>http://weblog.rubyonrails.com/archives/trackback/3087</trackback:ping>
@@ -60,7 +63,7 @@
 	&lt;p&gt;&lt;img src="http://redhanded.hobix.com/images/camping-xml-situps.png" /&gt;&lt;/p&gt;</description>
       <pubDate>Thu, 26 Jan 2006 03:09:35 +0000</pubDate>
       <guid isPermaLink="false">urn:uuid:677bdb11-f101-47a3-87da-9b4d7e020c7e</guid>
-      <author>David</author>
+      <author>foo@bar.com (Author)</author>
       <link>http://weblog.rubyonrails.com/articles/2006/01/26/camping-a-micro-version-of-rails</link>
       <category>Sightings</category>
       <trackback:ping>http://weblog.rubyonrails.com/archives/trackback/3078</trackback:ping>
@@ -70,7 +73,7 @@
       <description>&lt;p&gt;&lt;a href="http://www.globalize-rails.org"&gt;www.globalize-rails.org&lt;/a&gt; is the new home for the Globalize plugin that brings i18n functionality to Rails. They&amp;#8217;re tackling everything from translations of model data, to proper formating of local times, and much anything in between. Velbekommen!&lt;/p&gt;</description>
       <pubDate>Tue, 24 Jan 2006 23:10:19 +0000</pubDate>
       <guid isPermaLink="false">urn:uuid:40718348-d229-4eb5-8125-211a142e856f</guid>
-      <author>David</author>
+      <author>foo@bar.com (Author)</author>
       <link>http://weblog.rubyonrails.com/articles/2006/01/24/globalize-i18n-for-rails-gets-new-home</link>
       <category>Sightings</category>
       <trackback:ping>http://weblog.rubyonrails.com/archives/trackback/3056</trackback:ping>
@@ -80,7 +83,7 @@
       <description>&lt;p&gt;&lt;a href="http://osteele.com/projects/"&gt;Oliver Steele&lt;/a&gt; is working on OpenLaszlo integration for Ruby on Rails. There&amp;#8217;s a &lt;a href="http://ropenlaszlo.rubyforge.org/"&gt;OpenLaszlo gem&lt;/a&gt; out there now and &lt;a href="http://laszlo-plugin.rubyforge.org/"&gt;a Rails plugin&lt;/a&gt; to hook it all up for easy generation of OpenLaszlo applets. Check it out if &lt;span class="caps"&gt;HTML&lt;/span&gt; isn&amp;#8217;t doing it for you on the view.&lt;/p&gt;</description>
       <pubDate>Tue, 24 Jan 2006 23:00:22 +0000</pubDate>
       <guid isPermaLink="false">urn:uuid:63154abc-8d98-40ee-8286-a59d4f207c27</guid>
-      <author>David</author>
+      <author>foo@bar.com (Author)</author>
       <link>http://weblog.rubyonrails.com/articles/2006/01/24/openlaszlo-for-ruby-on-rails</link>
       <category>Sightings</category>
       <trackback:ping>http://weblog.rubyonrails.com/archives/trackback/3055</trackback:ping>
@@ -93,7 +96,7 @@
 	&lt;p&gt;So, if you&amp;#8217;re the creator of a Rails addition of any kind, please do pick a license and include it with your software. I recommend &lt;a href="http://dev.rubyonrails.org/browser/trunk/railties/MIT-LICENSE"&gt;&lt;span class="caps"&gt;MIT&lt;/span&gt;&lt;/a&gt;.&lt;/p&gt;</description>
       <pubDate>Tue, 24 Jan 2006 17:36:50 +0000</pubDate>
       <guid isPermaLink="false">urn:uuid:3d831e55-ced8-4674-aff1-a3973ea7db54</guid>
-      <author>David</author>
+      <author>foo@bar.com (Author)</author>
       <link>http://weblog.rubyonrails.com/articles/2006/01/24/pick-a-license-for-your-rails-additions</link>
       <category>General</category>
       <trackback:ping>http://weblog.rubyonrails.com/archives/trackback/3032</trackback:ping>
@@ -112,7 +115,7 @@
 	&lt;p&gt;And coming soon will be Chad Fowler&amp;#8217;s Rails Recipes and David A. Black&amp;#8217;s Ruby for Rails, which will bring us to a total of six books. And I believe there&amp;#8217;s at least a good handful of additional books in the works. Rails is certainly on track to be the best documented web framework for the dynamic languages. Rock on.&lt;/p&gt;</description>
       <pubDate>Mon, 23 Jan 2006 23:27:00 +0000</pubDate>
       <guid isPermaLink="false">urn:uuid:3b31f02e-96ff-4b67-970d-d29761bf3db6</guid>
-      <author>David</author>
+      <author>foo@bar.com (Author)</author>
       <link>http://weblog.rubyonrails.com/articles/2006/01/23/oreillys-first-rails-book-premieres-in-beta-form</link>
       <category>Documentation</category>
       <trackback:ping>http://weblog.rubyonrails.com/archives/trackback/3017</trackback:ping>
@@ -125,7 +128,7 @@
 	&lt;p&gt;The &lt;a href="http://www.prnewswire.com/cgi-bin/stories.pl?ACCT=104&amp;amp;STORY=/www/story/01-20-2006/0004264613&amp;amp;EDATE="&gt;announcement&lt;/a&gt; tells us that the book competes against such titles as Practical Common Lisp, Service-Oriented Architecture, and Wicked Cool Java. Rails 1.0 is going up against JBoss 4x, Coldfusion, and Zend Studio. Pretty exciting stuff. Hopefully we&amp;#8217;ll be jolting in red shortly.&lt;/p&gt;</description>
       <pubDate>Mon, 23 Jan 2006 05:02:16 +0000</pubDate>
       <guid isPermaLink="false">urn:uuid:26b6880a-0b58-47f1-acb2-f3c71e893e93</guid>
-      <author>David</author>
+      <author>foo@bar.com (Author)</author>
       <link>http://weblog.rubyonrails.com/articles/2006/01/23/rails-and-the-book-both-finalists-for-jolt-awards</link>
       <category>Sightings</category>
       <trackback:ping>http://weblog.rubyonrails.com/archives/trackback/3009</trackback:ping>
@@ -135,7 +138,7 @@
       <description>&lt;p&gt;&lt;a href="http://ruby-talk.org/cgi-bin/scat.rb/ruby/ruby-talk/176161"&gt;Rake 0.7.0&lt;/a&gt; has taken a great leap forward with the addition of parallel execution tasks and namespaces. Upcoming releases of Rails will surely use namespaces, so please do familiarize yourself with them today. And many thanks to Jim Weirich for his continued stellar work on this.&lt;/p&gt;</description>
       <pubDate>Fri, 20 Jan 2006 19:07:30 +0000</pubDate>
       <guid isPermaLink="false">urn:uuid:22b06624-5713-483f-9e96-b2d0ee402187</guid>
-      <author>David</author>
+      <author>foo@bar.com (Author)</author>
       <link>http://weblog.rubyonrails.com/articles/2006/01/20/rake-0-7-0-has-been-released</link>
       <category>Tools</category>
       <trackback:ping>http://weblog.rubyonrails.com/archives/trackback/3003</trackback:ping>
@@ -145,7 +148,7 @@
       <description>&lt;p&gt;The &lt;a href="http://canadaonrails.com/yvr06-schedule.html"&gt;schedule and list of speakers&lt;/a&gt; for Canada on Rails has been announced. The conference is happening April 13-14th in Vancouver.&lt;/p&gt;</description>
       <pubDate>Fri, 20 Jan 2006 18:23:23 +0000</pubDate>
       <guid isPermaLink="false">urn:uuid:d1246cb1-ec09-4195-a8d2-7d577e78f891</guid>
-      <author>David</author>
+      <author>foo@bar.com (Author)</author>
       <link>http://weblog.rubyonrails.com/articles/2006/01/20/canada-on-rails-announces-schedule</link>
       <category>Sightings</category>
       <trackback:ping>http://weblog.rubyonrails.com/archives/trackback/3000</trackback:ping>

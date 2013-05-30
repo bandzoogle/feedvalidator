@@ -24,7 +24,7 @@
 require 'feed_validator'
 require 'test/unit'
 require 'tmpdir'
-require 'md5'
+require 'digest/md5'
 
 module W3C
   class FeedValidator
@@ -58,7 +58,7 @@ class Test::Unit::TestCase
   #
   def assert_valid_feed(fragment=@response.body)
     v = W3C::FeedValidator.new()
-    filename = File.join Dir::tmpdir, 'feed.' + MD5.md5(fragment).to_s
+    filename = File.join Dir::tmpdir, 'feed.' + Digest::MD5.hexdigest(fragment).to_s
     begin
       response = File.open filename do |f| Marshal.load(f) end
       v.parse(response)
