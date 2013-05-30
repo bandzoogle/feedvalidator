@@ -1,0 +1,843 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<rdf:RDF
+  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  xmlns:dc="http://purl.org/dc/elements/1.1/"
+  xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+  xmlns:admin="http://webns.net/mvcb/"
+  xmlns:cc="http://web.resource.org/cc/"
+  xmlns="http://purl.org/rss/1.0/">
+
+<channel rdf:about="http://www.w3.org/QA/">
+<title>QA Weblog</title>
+<link>http://www.w3.org/QA/</link>
+<description></description>
+<dc:language>en</dc:language>
+<dc:creator>W3C QA Team</dc:creator>
+
+<dc:date>2006-03-08T11:07:04+00:00</dc:date>
+<admin:generatorAgent rdf:resource="http://www.movabletype.org/?v=3.2" />
+
+
+<items>
+<rdf:Seq><rdf:li rdf:resource="http://www.w3.org/QA/2006/03/minutes_of_qa_ig_f2f_at_the_w3.html" />
+<rdf:li rdf:resource="http://www.w3.org/QA/2006/02/content_negotiation.html" />
+<rdf:li rdf:resource="http://www.w3.org/QA/2006/02/buy_standards_compliant_web_si.html" />
+<rdf:li rdf:resource="http://www.w3.org/QA/2006/02/ruby_annotation_to_change_the.html" />
+<rdf:li rdf:resource="http://www.w3.org/QA/2006/01/quality_assurance_interest_gro.html" />
+<rdf:li rdf:resource="http://www.w3.org/QA/2006/01/failed_commitments.html" />
+<rdf:li rdf:resource="http://www.w3.org/QA/2005/11/w3c_renews_quality_assurance_i.html" />
+<rdf:li rdf:resource="http://www.w3.org/QA/2005/10/markup_validator_071.html" />
+<rdf:li rdf:resource="http://www.w3.org/QA/2005/09/css_validator_updated.html" />
+<rdf:li rdf:resource="http://www.w3.org/QA/2005/09/log_validator_10.html" />
+<rdf:li rdf:resource="http://www.w3.org/QA/2005/09/the_qa_handbook_published_as_a.html" />
+<rdf:li rdf:resource="http://www.w3.org/QA/2005/09/qa_at_w3c_continues_future_of.html" />
+<rdf:li rdf:resource="http://www.w3.org/QA/2005/08/variability_in_specifications.html" />
+<rdf:li rdf:resource="http://www.w3.org/QA/2005/08/qa_framework_specification_gui.html" />
+<rdf:li rdf:resource="http://www.w3.org/QA/2005/08/w3c_markup_validator_v070_rele.html" />
+</rdf:Seq>
+</items>
+
+</channel>
+
+<item rdf:about="http://www.w3.org/QA/2006/03/minutes_of_qa_ig_f2f_at_the_w3.html">
+<title>Minutes of QA IG F2F at the W3C Tech Plenary - February 2006</title>
+<link>http://www.w3.org/QA/2006/03/minutes_of_qa_ig_f2f_at_the_w3.html</link>
+<description>        <![CDATA[<p>The first meeting of the <acronym title="Quality Assurance">QA</acronym> <acronym title="Interest Group">IG</acronym>  has been very successful with a lot of interesting discussions and many projects for the future. <cite>Patrick Curran</cite>, participant of the QA IG, wrote <a href="http://blogs.sun.com/roller/page/pcurran/20060228">about the meeting on his weblog</a> and conclude by: <q>The Interest Group met yesterday and today to discuss how we should focus our efforts during the coming months. As always we have much more work to do than we have people to do it, so we would very much welcome assistance from people in the conformance testing community. Whether or not you're able to help, please join our mailing list and read our blog.</q></p>
+
+<p>The <acronym title="Quality Assurance">QA</acronym> <acronym title="Interest Group">IG</acronym> <acronym title="face to face">F2F</acronym> has been held in Cannes Mandelieu, France during the W3C Technical Plenary from Monday 27th of February to Tuesday 28th of February 2006. This meeting was <strong>open to public participation</strong> in the room, as well on the phone or IRC (channel irc://irc.w3.org/#qa).</p>
+
+<h3 id="participants">Participants</h3>
+
+<ul>
+<li>On site: Tim Boland (NIST), <a href="http://blogs.sun.com/roller/page/pcurran">Patrick Curran</a> (Sun Microsystems), <a href="http://www.w3.org/People/karl/">Karl Dubost</a> (W3C), Jacques Durand (Fujitsu), <a href="http://www.opera.com/company/investors/board/members/snorre/">Snorre M. Grimsby</a> (Opera), <a href="http://www.w3.org/People/Dom/">Dominique Hazaël-Massieux</a> (W3C), <a href="http://www.w3.org/People/olivier/">Olivier Théreaux</a> (W3C)</li>
+<li>On phone:  Lofton Henderson (CGM Open), Lynne Rosenthal (NIST)</li>
+<li>On IRC: Björn Höhrmann, <a href="http://www.webstandards.org/about/bios/steph.html">Stephanie Troeth</a> (WASP), <a href="http://www.webstandards.org/about/bios/hmkoltz.html">Holly Marie Koltz</a> (WASP)</li>
+</ul>
+
+<p>Regrets: Mark Skall</p>
+      <ol>
+        <li><a href="#test-metadata">Test Cases Metadata</a></li>
+        <li><a href="#w3c-glossary">W3C Glossary system</a></li>
+        <li><a href="#cuap-chips">CUAP and CHIPs</a></li>
+        <li><a href="#qa-findings">QA Findings</a></li>
+        <li><a href="#qa-weblog">QA Weblog</a></li>
+        <li><a href="#ebnf">EBNF discussion</a></li>
+        <li><a href="#test-assertion">Test Assertion Guide</a></li>
+        <li><a href="#organization-qaig">Organization of QAIG</a></li>
+        <li><a href="#qa-templates">Templates of QA Handbook and
+        SpecGL</a></li>
+        <li><a href="#qa-tools">Tools</a></li>
+        <li><a href="#curriculum">Curriculum for Web
+        Standards</a></li>
+        <li><a href="#validators">Validators</a></li>
+        <li><a href="#earl">Joint session with ERT Working Group on EARL</a></li>
+      </ol>]]>
+        <![CDATA[    <h3 id="test-metadata">Test Cases Metadata</h3>
+
+    <p><a href="http://www.w3.org/TR/test-metadata/">Test Metadata</a>
+has been published as a W3C Working Group note in September 2005. The document defines a minimal set of metadata elements that can usefully be applied to tests that are intended for publication within a test suite. We published it quickly. At the time of the publication, it was mentionned that a schema could be useful to help implementers to use it in their tools. Dominique Hazaël-Massieux has suggested that we should start an RDF or XML Schema implementation of these metadata. It should be done in coordination with one or two Working Groups and in the context of a practical use. Mobile Best Practices might be one canditate, and ERT WG with EARL might be another possible implementation of this language.</p>
+
+<p>Snorre mentionned that it could be of interests for Opera which has already plenty of test suites that could be released in W3C venues.</p>
+<p>We agreed that we have to be flexible, and make this schema as extensible as possible. So that people can not only use it but adapt it to their own needs. The choice of the format for the schema might be a problem in certain venues: RDF, XML Schema, RelaxNG, … We will then not recommend only one schema. We will start with one implementation and invite other people to contribute their own schema to be added to the document in appendix. </p>
+
+<p>We could expect a republication in April 2006.</p>
+<ul>
+<li><a href="http://www.w3.org/QA/2005/03/joint-test-suites.html">A survey on Test Suite needs at W3C</a></li>
+<li><a href="http://www.w3.org/2002/09/wbs/34786/qa-test/results">Survey of testing practices in W3C groups</a></li>
+</ul>
+
+<ul>
+	<li><strong>ACTION:</strong> Dom to propose an implementation of Test Metadata in RDF. Deadline: Mid-March</li>
+	<li><strong>ACTION:</strong> Patrick, Tim and Snorre to review Dom'simplementation of Test Metadata in RDF</li>
+</ul>
+
+    <h3 id="w3c-glossary">W3C Glossary system</h3>
+    
+    <p>The <a href="http://www.w3.org/2003/glossary/">W3C Glossary</a> is not a directly QA related topic, but it has interests with regards to the quality of specifications. it helps harmonization of vocabulary accross specifications and maintains regularity. The project has been started 3 years ago. It collects the data from W3C specifications and is RDF based. A new intern will start to work on this project in May 2006. The goals are translations of W3C Terms in different languages. This is useful for volunteers who translate W3C specifications. Optimization of the code, making the code open source and study of relationship (semantic genealogy) between terms are also goals. For example, what would be the variability of definitions of user agents accross W3C specifications.</p>
+    <p>The use of the W3C Glossary is encouraged on <a href="http://www.w3.org/2003/Editors/">W3C Editors home page</a>.</p>
+
+   <h3 id="cuap-chips">CUAP and CHIPs</h3>
+
+    <p><a href="http://www.w3.org/TR/cuap">Common User Agent Problems</a>
+    and <a href="http://www.w3.org/TR/chips/">Common HTTP Implementation Problems</a> are two Notes which have been published a few years ago. They highlight some common implementation issues in user agents     and HTTP-based softwares. We discussed about updating and republishing the two notes making then one note synchronized on <a href="http://www.w3.org/TR/2004/REC-webarch-20041215/">Web architecture</a> recommendation. Worries have been expressed about merging the two documents. They might not address exactly the same public: User agents versus servers. We will use the Wiki to collect issues from people about identified HTTP implementation problems using the Web Architecture document as a framework for collecting issues. We have to make very clear that it's not a way to collect issues about Web architecture document itself. The new draft will be posted to QA IG mailing-list for comments.</p>
+    
+
+    <p><strong>ACTION:</strong> Olivier and Karl to provide an updated
+    version of CUAP and CHIPs - due by end of April</p>
+    <p><strong>ACTION:</strong> Snorre will review the document once it has been published.</p>
+
+ 
+    <h3 id="qa-findings">QA Findings</h3>
+
+    <p><a href="http://www.w3.org/2001/tag/findings">Tag Findings</a> are short documents dealing with issues about architecture. The format is     quite interesting and gathering the knowledge about one particular topic of Web architecture. Dominique Hazaël-Massieux has suggested that it might be possible to publish QA Findings.</p>
+    <p>For example, in MWI WG, they are writing best practices, some of these practices are not testable. So, they are not normative. An requirement don't have to be testable to be normative, but life become much harder if non testable normative requirements are provided in a specification. Having a summary of all discussions which have been done for this specific topic would be very useful and could serve as a QA Findings.</p>
+	<p>When a discussion got enough momentum on the www-qa mailing-list, someone will take the responsibility about prototyping the topic on the <a href="http://esw.w3.org/topic/QA">QA wiki</a> and collect information. Once the document has reached maturity, we might publish it as a QA Finding, probably on the QA Weblog.</p>
+
+    <p><strong>ACTION:</strong> Dom to start a wiki page on
+    testability/normativity before mid-March and will report on www-qa.</p>
+
+
+    <h3 id="qa-weblog"><a href="http://www.w3.org/QA/">QA Weblog</a></h3>
+
+    <p>The QA home page was used to have only small news. After discussion in the QA Team, we thought about developing a Weblog for the QA home page. This is officially owned by the QA IG, although the policies for writing in it aren't well defined yet. We have already started to publish a few articles with open comments (but moderated). We may receive an email  or read a news which raises an interesting question to be develop in a longer post. It has been decided to create the QA Weblog, because it doesn't reach necessary the same public than people reading mailing-list or using the wiki.</p>
+    <p>Entry will be edited for adding references and/or fix mistakes in the article to ensure a good level of quality. The comments being open, it also gives an opportunity to add information to the post. If we identify a discussion that would make a good contribution for the wiki, we might ask the person to prepare a contribution for the weblog. Recently, there was a discussion about EBNF.</p>
+    <p>The QA Weblog has not been marketed too much, only by word of mouth. We wanted to see how the community would react, but anyone can talk about it or advertize it. </p>
+
+    <p><strong>ACTION:</strong> karl to see if Björn is interested in
+    preparing a blog entry on the EBNF discussion.</p>
+
+    <h3 id="ebnf">EBNF discussion</h3>
+
+    <p>There are EBNF discrepancies or inconsistencies  among specifications. It has been proposed by Björn Höhrmann to take existing ENBF and add XML namespaces plus errata to avoid further discrepancies - or guarantee consistency. It is definitely clear that is not the job of the QA IG to fix this document, but XML Core WG role. Karl will coordinate with Björn to contact XML Core.</p>
+
+    <h3 id="test-assertion">Test Assertion Guide</h3>
+
+    <p>Jacques Durand has worked inside OASIS on two efforts — one in scope of EBXML — markup of test assertions, other is that specs should be more testable. A simple guide to write test assertions has then been a requirement. There is an educational/PR exercise. The document developed at OASIS is right now a rough draft, but could be benefit of being reviewed by W3C and OASIS. It has been mentionned that would be possible only if the document is publicly available. The document could end up as a FAQ to write test assertions.</p>
+    
+    <p>ACTION Jacques and Lynne: to find out about making the DRAFT guide on writing test assertions public</p>
+	<p><strong>ACTION:</strong> Lynne to develop document summary (review with Jacques) on DRAFT guide on writing test assertions</p>
+
+    <h3 id="organization-qaig">Organization of QAIG</h3>
+
+    <p>The only requirement to be a Member of the QA IG, a person has to be subscribed on qa ig mailing list. There are no currently regular teleconferences. We have to define ways of organizing the QA IG and support the QA IG objectives.</p>
+    <p>Lynne Rosenthal has also voiced the desire to step down from her role as a co-chair of the group. Her time is too limited. Lynne agrees to continue to participate to the work of the QA IG. Patrick Curran has proposed to take her role. We need to ask W3C Management for confirmation. </p>
+<p>The two co-chairs will have regular teleconferences every two weeks to move the work forward, review the action items, and find volunteers (participants) to take responsibilty on work.</p> 
+  
+   <p><strong>ACTION:</strong> Karl to ask W3C management about change of co-chairs for QA IG</p>
+
+    <h3 id="qa-templates">Templates of QA Handbook and SpecGL</h3>
+
+    <p>There has been no more work done on conformance template, charter template and QA Process document template. Slightly related a mail has been sent about <a href="http://www.w3.org/mid/A2B7A5CC-8E66-4228-B18B-F0887221557A@w3.org">tagging the QA Handbook</a> to make an index to access the document with different views.</p>
+
+    <p><strong>ACTION:</strong> Karl to finish conformance template.</p>
+    <p><strong>ACTION:</strong> Karl to finish charter template by
+    March 16</p>
+	<p><strong>ACTION:</strong> Lofton to finish process template in
+    next six weeks</p>
+    <p><strong>ACTION:</strong> Tim to index QA Handbook to answer
+    specific questions</p>
+
+    <h3 id="qa-tools">Tools</h3>
+
+    <p>It would be beneficial for the W3C community to develop tools that would help WG members to write specifications and test them. It could be things like specifications markup process, measuring coverage, tools for tests/test harnesses needed, etc. As a first step, we decided to collect on a wiki page, <a href="http://esw.w3.org/topic/QaTools">QA Tools</a>, a list of resources and tools.</p>
+    <p><strong>ACTION:</strong> Patrick to update section QA Tools on the wiki - http://esw.w3.org/topic/QaTools</p>
+
+
+    <h3 id="curriculum">Curriculum for Web Standards</h3>
+
+    <p>Both the QA IG and the <a href="http://webstandards.org/">WASP</a> are interested by creating resources for a Curriculum for Web standards. It's a recurring discussion on W3C mailing lists. The <a href="http://www.webstandards.org/act/campaign/edutf/">WASP Education Task Force</a> has been involved in talking to universities and colleges, bringing out examples of what's been done. The public output has been in the forms of interviews. The WASP is now interested in developing a kind of curriculum framework to help lecturers into their teaching. The QA activity as large has done nothing in this direction yet, but we have taken contacts, like Ed Bilodeau at Mc Gill University, Montreal, Canada to collect materials that would be useful for such a curriculum. Ed Bilodeau has showed interests in contributing to such a work, maybe under the form of a W3C Group Note. This work could be moved forward quite quickly considering that Stephanie Troeth (WASP) and Ed Bilodeau are both in Montreal.</p>
+    <p>The audience of this framework would be lecturers, college teachers. It would include the time constraints, budget allocations, resources, etc. It has been shown that sometimes lecturers are quite positive about Web standards but they faced resistance through their department, specifically in Web design faculties. The framework will have to give hints on strategies for change. The format of the package has not yet been decided, but it has to be international then we need to understand how universities function around the world. </p>
+<p>There is a need for balance between</p>
+
+<ol>
+	<li>what needs to be taught</li>
+	<li>what can conceivably be taught</li>
+</ol>
+
+<p>There might be resources at Opera to make available for this effort. Opera has 1 full time + future resources part time and then probably full time working on the "open the web" initiative, but without precisely knowing how much of this could be contributed to QA IG. Some Web Standards User groups are forming at key Universities and Colleges to provide and advocate a method for change - WaSP Edu is providing interviews with these as they find out about them.</p>
+
+<p>The Core EduTF at WASP has four to six people. It seems reasonnable to create a join effort with a regular IRC meetings at least, every 2 weeks. We will push the requirements interview phase and decide where to head from there.</p>
+
+<p>The first IRC meeting is planned for March 21. Time to be defined.</p>
+
+<h3 id="validators">Validators</h3>
+
+<p>W3C hosts a number of free public tools that allow developers and
+maintainers of web documents to check them for conformance.</p>
+
+<ul>
+	<li>Markup validator (HTML and XHTML, SVG or MathML)</li>
+	<li>CSS validator</li>
+	<li>RDF validator </li>
+	<li>Feed validator (developed at Sourceforge) - hosted by W3C</li>
+</ul>
+
+<p>See  the <a href="http://www.w3.org/QA/Tools">full list of individual tools</a>.</p>
+
+<p>We're now running into discrepancies between the ways in which the tools work. Markup validator is based on SGML parser (doesn't handle XML very well) but the CSS validator is based on a better XML parser. (So, Markup validator might pass something that CSS validator will reject.). UIs were different. Over the past 6 months, much of the work has been done to harmonize the tools.</p>
+
+<p>Major effort is under way to provide simple programmable (SOAP)
+interfaces to these tools. Current status:</p>
+
+<ul>
+	<li>CSS: in production</li>
+	<li>Feed: in production</li>
+	<li>Markup: still in development</li>
+</ul>
+
+<p>These SOAP interfaces have enabled, for example, the creation of a single
+AJAX-based front-end to the both the Markup and CSS validators. In future, additional checks could be added (assuming that other tools are available with SOAP interfaces).  Tools are written in different languages (PERL, Java, Python) - SOAP allows us to unify. Tools are developer by volunteers, mostly in Europe. The Markup validator mailing list has several hundred subscribers. A hard-core
+of supporters provide help. CSS also has a mailing list too. RDF validator was not actively managed but Jeremy Carroll (HP) has now agreed to take this on.</p>
+
+<p> There is an appeal to members for assistance with development and maintenance. We need to encourage member companies to use the W3C validators. Some packages are made available for in-house installation (sometimes through distributions like linux flavours) if there are concerns about passing internal documents to an outside instance of the validator. It's hoped that as usage increases some companies will contribute resources for development or bug-fixing.</p>
+
+<p>Some years ago people considered the Markup validator to be the
+"reference" for HTML rather than the HTML specifications themselves. Now people have understood that this is just a tool.</p>
+
+<p>We might create a low traffic "announcement" list for all validators which would complement the RSS feed of the <a href="http://www.w3.org/Status">W3C Open Source software</a> page. We could also look at avenues like  VersionTracker, Freshmeat, etc.</p>
+
+<p><strong>ACTION:</strong> Olivier to investigate new avenues to advertise new releases of validators</p>
+
+<h3 id="earl">Joint session with ERT Working Group on EARL</h3>
+
+<p>We had a joint session with <a href="http://www.w3.org/WAI/ER/">ERT Working Group</a> about EARL on how the language is defined. The test metadata schema could be reused in part by EARL which is likely to make this effort even more urgent. (See <a href="http://www.w3.org/2006/02/28-er-minutes#item01">Minutes</a>)</p>
+
+<p class="image"><img src="http://www.w3.org/QA/2006/03/cannes-mer" alt="Sea and Sky during the W3C Technical Plenary" /></p>]]></description>
+<dc:subject>QAIG Life</dc:subject>
+<dc:creator>Karl Dubost</dc:creator>
+<dc:language>en</dc:language>
+<dc:date>2006-03-08T11:07:04+00:00</dc:date>
+</item>
+
+<item rdf:about="http://www.w3.org/QA/2006/02/content_negotiation.html">
+<title>Content Negotiation: why it is useful, and how to make it work</title>
+<link>http://www.w3.org/QA/2006/02/content_negotiation.html</link>
+<description>        <![CDATA[<p>We recently received a puzzled message from a visitor of the W3C Web site, asking how we were serving images without file suffix in their URI. Looking around, our visitor found that <code>http://www.w3.org/StyleSheets/TR/logo-REC</code> was not one file, but two: <code>logo-REC.gif</code> and <code>logo-REC.png</code>. How do we do that?</p>
+
+<p>The short answer is: <em>Content Negotiation</em>. </p>
+<p>In this article, we will discuss content negotiation in depth and examine practical solutions.
+However, to begin, we need to first understand what a URI is, and what it is not.</p>
+]]>
+        <![CDATA[<h3>A URI is a reference</h3>
+<p>The first thing we need to understand is that <strong>a URI is not a file name</strong>.</p>
+
+<p>It is convenient to see a URI as the location for a file, and in most cases, the analogy works. However, as we will see soon, this analogy is too poor to describe everything a URI actually is. Let's just remember that there is a good reasons why web "pedants" insist on calling it a URI, a <em>Universal Resource Identifier</em>, not a URL: it is not a file name or location, it is an <em>identifier (or a reference) to a resource</em>. By using a proper protocol, it is possible to retrieve the actual resource, that's called <em>dereferencing a URI</em>.</p>
+
+<p>But why all this abstraction, since in most cases the resource will happen to be stored in a file anyway, and the URI will be mapped directly to the file name?</p>
+
+<p>Let us consider two things very similar to a URI: a bar code for a product, and an <acronym title="International Standard Book Numbering">ISBN</acronym> for a book. The former is a reference to a product, and the latter, a reference to a publication. In the case of the bar code and associated product, it is important to note that the product is not a specific box of cookies on a shelf, the referred product is actually the type of cookies of a certain brand, and all share the same bar code. Similarly, ISBNs do not refer to a flesh and bone (or, rather, paper-and-spine) book, but to the text it contains. In fact, it is not rare that several editions of a book share the same ISBN number: in the context of the ISBN, they are similar.</p>
+
+<p>The same idea can be applied to URIs. A URI refers to a resource, but the resource is not one file on one web server. Take for example the resource "the weather in Oaxaca". A resource is just that: a piece of information on the Web. An HTML document with a text describing the weather in Oaxaca, or an image representing a map with indicators about the weather, all these files can be appropriate representations for this resource.</p>
+
+<p>In fact, the maintainer of the Web resource could very well decide that a number of representations of this piece of information are equivalent, and think "what if I let the visitors of my Web site decide which representation they prefer?" On the Web, these equivalent representations of a resource are called <em>variants</em>, and the mechanism used to determine which of the existing representations is most appropriate for a given request is called <em><a href="http://www.w3.org/TR/webarch/#frag-coneg">Content Negotiation</a></em>.</p>
+
+
+<p><img src="http://www.w3.org/QA/2006/02/content-negotiation-graph" alt="a URI is a pointer to a resource, which can have many equivalent variants" /></p>
+
+<h3>Content Negotiation: figuring out the best deal for everyone</h3>
+
+<p>Content Negotiation is a complex-sounding term for what is a rather simple mechanism.</p>
+
+<p>Imagine yourself discussing on the phone, suggesting a date. You ask: <q cite="">We should meet soon! How about Wednesday, or Friday?</q>. your friend answers <q cite="">Excellent! I have free time on Friday!</q>. Sounds simple? Now replace the <em>date</em> with a <em>resource</em>, think of yourself as the <em>client requesting a resource</em> and your friend as the <em>Server, accepting the request based on the preferences of the client and on its own availabilities</em>: this is Content-Negotiation as it is implemented on the Web.</p>
+
+<p>In summary, the basic idea of Content Negotiation is to serve the best variant for a resource, and to serve it based on:</p>
+<ul>
+<li>What variants are available, and what variants the server may prefer to serve</li>
+<li>What the client can accept, and with which preferences: in HTTP, this is done by the client which may send, in its request, <em>Accept</em> headers (Accept, Accept-Language and Accept-Encoding), to communicate its capabilities and preferences in Format, Language and Encoding, respectively.</li>
+</ul>
+
+<!-- this part on server-driven vs client driven was not really useful, taking it oot
+ <p>By default, the HTTP protocol implements what is called a <em>server-driven</em> content negotiation mechanism, meaning that the Web server, upon receiving information about the Client's supported variants and preferences, as well as knowing the available variants for a resource, will be the actor of the negotiation responsible for making the final decision on which variant suits everyone best. The opposite is <em>client-driven</em> negotiation, where the server lists all variants, and asks the client: "pick one". The latter is sometimes used as a fallback mechanism when the server-driven mechanism fails.</p>
+-->
+
+<h3>Language Negotiation: why every multilingual site owner should know about it</h3>
+
+<p>The mechanism that allows us to serve an image in two different file formats, which our visitor was puzzled about, is in fact one type of Content-Negotiation, called <em>Format Negotiation</em>. One other important and interesting usage of Content Negotiation is its application to representations of a resource in several languages, and how to serve them to the reader based on their preferences: <em>Language Negotiation</em>.</p>
+
+<p>With Language Negotiation, there is no need to give a link to oaxaca.html.en for readers of English and oaxaca.html.de for readers of German, just link to oaxaca, set up your server properly (e.g <a href="http://www.w3.org/International/questions/qa-apache-lang-neg">apache</a>) and the negotiation happening between the server and the client's preference will make each reader receive the resource in the proper language.</p>
+
+<h4>Why is Language Negotiation seldom used?</h4>
+
+<p>How come then that language negotiation is not being widely used at all if it can be so useful in dispatching, automatically, the proper language variant of a document to its audience? Partly perhaps because it is not well known, and people building multilingual web sites think of their site as a multiplication of language-specific mini-sites, instead of thinking of it as one site, with one set of URIs, only with different versions and languages available.</p>
+
+<p>It is not, however, the sole reason for the lack of usage of language negotiation. One other reason is that for a long time, with the most popular negotiation-enabled Web server (the ubiquitous apache), <a href="http://www.w3.org/TR/chips/#cp9.1">failed negotiation</a> (for instance, a reader of french being proposed only english and german variants of a document), resulted in a nasty "406 not acceptable" HTTP error, which, while technically conforming to HTTP, failed to follow the recommendation that a server should try to serve some resource rather than an error message, whenever possible. Fortunately, more recent versions of the server now allow the setting of a fallback, or default, variant in case the negotiation fails.</p>
+
+<h4>Another serious issue: giving the <em>users</em>, not the <em>browser</em>, what they want</h4>
+
+<p>There is another issue with language negotiation as it is implemented in HTTP:  it implies that the client is properly configured, that is, it implies that the client (the Web browser) will send <code>Accept-Language</code> information that actually reflects the languages its user can read, and what languages are preferred among these. Unfortunately, it is often not true: although many modern browsers do allow their users to set preferred languages, not all of them do, and even when they do, there are cases when the user does not know how the set up is made (here is  <a href="http://www.w3.org/International/questions/qa-lang-priorities">how</a>). In some cases, for instance on shared computers or "internet kiosks", the user is not even allowed to change the settings of the Web browser.</p>
+
+<p>In this context, a zealous usage of language negotiation can even have effects against usability of a site. Imagine a bilingual site (in our example, English and Japanese) where negotiation between the server and browser results in the choice of the English variant. The reader actually prefers Japanese, and finds a link to the Japanese version, easily visible at the top of the English variant, and follows it. However, as the user keeps browsing… the negotiation between the browser and the server keeps returning the English version. Quite probably, the user will just get irritated, browse away, never to return: language negotiation, albeit there to help the user, can prove to be a usability liability.</p>
+
+<h4>Toward a <em>better</em> language negotiation</h4>
+
+<p>How can we work around this?</p>
+<p> One possibility is to choose to provide "generic", language negotiated access to resources only at known important entry points to the site, and from there on, use only language specific links . That solution does prevent the running away of users irritated by the limitations of language negotiation, but if Bob wants to send a link to a specific resource on the site to his friend Norio in Japan, wouldn't it be nice to be able to just send the URI of the page he is browsing (in English) and have his Japanese friend automatically get the Japanese version? Wouldn't it be nice to be able to use the power of Language negotiation on the whole site, without any usability issue?</p>
+
+<p>After all, the concept of negotiation is to try and automatically provide the best possible variant based on the ones available in the server and the preferences of the user - whether to use the preferences of the browser and the <code>Accept</code> HTTP headers it sends is only a convenient implementation in HTTP, not the <em>only</em> way to implement a negotiation system.</p>
+<p>What if?&hellip; Negotiation could take into account the settings in the user's browsers, <em>and</em> records of past interactions with the site. And although HTTP is stateless, there is an easy way to do this: cookies. A negotiation algorithm trusting a cookie showing that the user has <em>chosen</em> a language different than the one negotiated based on its Accept-Language: header information, and defaulting to Accept-based negotiation in the absence of such a cookie, may be the best of both worlds: negotiated resources, and the guarantee of a consistent user experience regardless of potentially misconfigured browsers.</p>
+
+<h3>A PHP implementation of the "better language negotiation"</h3>
+
+<p>Below is a sample implementation of the idea described above, using the php language.</p>
+
+<h4>How this php-based language-negotiation works</h4>
+
+<ol>
+<li><p><code>page</code> (the URI naming is just an example) is the "generic" resource. It checks for the existence of a language choice cookie first, and in the absence of it, calls <code>choose_lang.php</code>. When the negotiation algorithm ends, a variable called <code>$chosenlang</code> is set, and based on the value of this variable, either <code>page.en</code> or <code>page.ja</code> is called with an <code>include</code> mechanism</p>
+
+<p>You can download the <a href="sample_nego/page">php source for <code>page</code></a>. Its code is actually very simple, as shown below:</p>
+
+<pre>
+&lt;?php
+include('/path/to/choose_lang.php');
+if ($chosenlang == "en") {
+        include 'page.en';
+}
+else {
+        include 'page.ja';
+}
+?&gt;
+</pre>
+</li>
+
+<li><p> <code>choose_lang.php</code> implements a very basic HTTP language negotiation based on Accept-Language: headers. It does not take into account "quality factors", which could be used to weigh in several possible choices. As you can see in the <a href="sample_nego/choose_lang" title="see the full commented source for choose_lang">commented source</a>, its main task is to find a value for the variable <code>$chosenlang</code>, first by checking the presence of a cookie (denoting a language choice in previous interaction with the site), then by trying a content-negotiation algorithm similar to that of HTTP, and finally, if necessary, falling back to a default language choice.</p></li>
+
+<li><p>Finally, the language specific files for our page, <code>page.en</code> and <code>page.ja</code> should have some code at the top, executed only if the variable <code>$chosenlang</code> is not set. As we saw above, this would mean that the resource was <em>not</em> called through the generic resource, but rather requested directly, so it's a fair assumption that the user followed a language-specific link to switch the language of display: therefore, we want to store a cookie recording the new choice of language.</p>
+<p>Here is how the code at the top of <code>page.en</code> should look:</p>
+<pre>
+&lt;?php if(! isset($chosenlang)) {setcookie("lang", "en", time()+60*60*24*30, "/"); $chosenlang="en";} ?&gt;
+&lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+&hellip;
+</pre>
+</li>
+</ol>
+
+
+<h3>Links galore</h3>
+<ul>
+<li><a href="http://www.w3.org/Protocols/rfc2616/rfc2616-sec12.html">HTTP1.1: Content Negotiation</a>. <em>The</em> reference. There is also an <a href="http://www.ietf.org/rfc/rfc2295.txt">RFC on Content Negotiation in HTTP</a>, but it's a little outdated, and refers to an now superseded draft of HTTP1.1</li>
+<li>The <a href="http://www.w3.org/TR/webarch/#def-coneg">short and sweet definition of Content Negotiation</a> from the Web architecture document.</li>
+<li>the <a href="http://www.w3.org/TR/chips/"><acronym title="Common HTTP Implementation Problems">CHIPs</acronym></a> W3C Note has a number of guidelines on how Web servers and server-side technologies can implement negotiation.</li>
+<li>The <a href="http://www.w3.org/International/">Internationalization Activity</a> of W3C has two good FAQs on the topic of language negotiation: <a href="http://www.w3.org/International/questions/qa-when-lang-neg">When to use it</a> and <a href="http://www.w3.org/International/questions/qa-apache-lang-neg">How to set it up with Apache</a>.</li>
+<li>The always thorough Jukka Korpela has a extensive section of his site dedicated to <a href="http://www.cs.tut.fi/~jkorpela/multi/">multilingual Web sites</a>, discussing technical as well as usability aspects.</li>
+<li>The bilingual <a href="http://www.tokyoartbeat.com">Tokyo Art Beat</a> Web site uses the language negotiation techniques explained in this article.</li> 
+</ul>
+
+<h3>Post Scriptum</h3>
+<p>Many thanks to Karl Dubost, Felix Sasaki and Steph Troeth for some excellent input, suggestions and corrections to this article.</p>
+<p>Please use the comments form below if you wish to provide feedback, or suggest other implementations to make Content Negotiation on the Web more useful and more widely used. Thank you.</p>
+]]></description>
+<dc:subject>Technology 101</dc:subject>
+<dc:creator>olivier Thereaux</dc:creator>
+<dc:language>en</dc:language>
+<dc:date>2006-02-21T02:12:42+00:00</dc:date>
+</item>
+
+<item rdf:about="http://www.w3.org/QA/2006/02/buy_standards_compliant_web_si.html">
+<title>Buy standards compliant Web sites</title>
+<link>http://www.w3.org/QA/2006/02/buy_standards_compliant_web_si.html</link>
+<description>        <![CDATA[<p>The topic is far from being new, but it reaches the surface of Web business at regular times. The Web community often struggles between a desire of creating a professional work and the necessity of making a living of one's business.<cite><a href="http://www.molly.com/">Molly E. Hoschlag</a></cite> was writing in November 2005 about <cite><a href="http://www.molly.com/2005/11/14/web-standards-and-the-new-professionalism/">Web standards and The New Professionalism</a></cite>. She was reminding us about what does that mean to be professional for a Web developer, Web designer:</p>
+
+<blockquote cite="http://www.molly.com/2005/11/14/web-standards-and-the-new-professionalism/"><p>The essence of this new professionalism isn’t about being perfect at what we do. It’s being able to say: Hey, I don’t know that. Let me go find out. It isn’t about knowing it all, because we surely never will. And, there will be shifts and changes. […]</p>
+<p>[…]</p>
+<p>Today, I want to express that I believe that this new professionalism means taking responsibility for the education of ourselves and each other, and ensuring that reversions like Disney Store UK never happen again. </p></blockquote>
+]]>
+        <![CDATA[<p>In article published this week (February 7, 2006) on Evolt, <cite>Thomas Ashworth</cite> asked the following question <cite><a href="http://evolt.org/web_standards_should_my_business_website_be_compliant">Web Standards. Should my Business Website be Compliant?</a></cite> and concludes by </p>
+
+<blockquote cite="http://evolt.org/web_standards_should_my_business_website_be_compliant">
+<p>web standards bring real tangible benefits to business. Although finding a design company that will construct a standards compliant site is more difficult than just finding a web designer, the benefits speak for themselves. By moving to a standards based web site businesses can ensure they have accessible sites which are maintainable and future proofed. Increased customer exposure and search engine prominence can all improve the level of business that comes to you via your website. Web standards are the future of the internet and to ignore it could leave your business trailing behind the online competition.</p>
+</blockquote>
+
+<p>The issue presents  two faces, can we try to coin them:</p>
+
+<ul>
+      <li>Web Professionals</li>
+      <li>Web Site Clients</li>
+</ul>
+
+<h3 id="pro">Web Professionals</h3>
+<p>It will take time to modify the habits, to teach to your colleagues and to create an ecosystem which is sustainable enough to have good quality and profit, but it is really worthwhile as it has been demonstrated by pioneers in the domain.</p>
+
+<h3 id="client">Web Site Clients</h3>
+
+<p> All person who is in charge of writing a requirement document for the future Web site of a company can change things. You may have to fight and find the right agency but here again the effort is worthwhile. It may even help you to select the right agency to do the job. Do not think about your Web site as something different than your core business. When you are dealing with a supplier, a provider, you need absolutely to get a product of quality.</p>
+<p>The main issue is that often you do not know what you should ask. <cite><a href="http://people.w3.org/~dom/">Dominique Hazaël-Massieux</a></cite> has written a document a while ago about this specific topic: <cite><a href="http://www.w3.org/QA/2002/07/WebAgency-Requirements">Buy standards compliant Web sites</a></cite>.  It provides a list of simple requirements that you could add to your Web site requirements document when negociating with Web agencies. Any public feedback on this document is welcome and can be send to the <a href="http://lists.w3.org/Archives/Public/public-evangelist/"><strong>publicly archived</strong></a> mailing list <a href="mailto:public-evangelist@w3.org">public-evangelist@w3.org</a>.</p>
+
+<p>We will achieve Web standards by acting on both side: responsibility for Web professionals and quality requirements from customers.</p>
+
+]]></description>
+<dc:subject>Opinions &amp; Editorial</dc:subject>
+<dc:creator>Karl Dubost</dc:creator>
+<dc:language>en</dc:language>
+<dc:date>2006-02-07T23:19:05+00:00</dc:date>
+</item>
+
+<item rdf:about="http://www.w3.org/QA/2006/02/ruby_annotation_to_change_the.html">
+<title>Ruby Annotation Under The Sunlight</title>
+<link>http://www.w3.org/QA/2006/02/ruby_annotation_to_change_the.html</link>
+<description>        <![CDATA[<p>(Updated on Friday 3 February 2006 to add valuable source of information given by <cite><a href="http://www.w3.org/People/Ishida/">Richard Ishida</a></cite>)</p>
+
+<p>In the concepts of <a href="http://microformats.org/">microformats</a>, there is a key concept which is <q cite="http://microformats.org/about/">design for humans first, machines second</q>. We have often been faced to the problem of giving a date that will be easy to read by human and will be easy to  parse by a computer. Or maybe you would like to give the price of a product with values in two currencies? Or you would like to give the translation of a term in another language?  How would you be able to do that in <a href="http://www.w3.org/TR/xhtml11/">XHTML</a>? Is there a <strong>simple way</strong> of associating different types of information with a simple semantic relationship.</p>
+
+<p>There is a language for these applications which has been created in 2001 at W3C: <a href="http://www.w3.org/TR/ruby/">Ruby Annotation.</a></p>]]>
+        <![CDATA[<h3 id="about">About Ruby?</h3>
+
+<p>Ruby on the Web these days is known to be a <a href="http://www.ruby-lang.org/" title="Web site of Ruby programming language">programming language</a>, a <a href="http://www.intertwingly.net/blog/" title="Weblog of Sam Ruby">programmer working for IBM</a> and I guess for most people, everywhere in the world, a <a href="http://en.wikipedia.org/wiki/Ruby" title="definition of the Ruby gemstone">red gemstone</a>. In the context of W3C, <a href="http://www.w3.org/TR/ruby/">Ruby</a> is a simple markup language which offers the possibility of creating inline annotations, as described in the <a href="http://www.w3.org/TR/2001/REC-ruby-20010531/#what">Ruby specification</a></p>
+
+<blockquote cite="http://www.w3.org/TR/2001/REC-ruby-20010531/#what">
+<p>Ruby is the term used for a run of text that is associated with another run of text, referred to as the base text. Ruby text is used to provide a short annotation of the associated base text. It is most often used to provide a reading (pronunciation guide). Ruby annotations are used frequently in Japan in many kinds of publications, including books and magazines. Ruby is also used in China, especially in schoolbooks.</p>
+
+<p>Ruby text is usually presented alongside the base text, using a smaller typeface. The name "ruby" in fact originated from the name of the 5.5pt font size in British printing, which is about half the 10pt font size commonly used for normal text.</p>
+</blockquote>
+
+<p>You will find a lot of answers to your questions in the <a href="http://www.w3.org/International/questions/qa-ruby">FAQ about Ruby</a>.</p>
+
+<h3 id="use-cases">Use Cases for Ruby Annotation</h3>
+
+<p>We asked <a href="http://www.w3.org/People/fsasaki/">Felix Sasaki</a>, working in the W3C <a href="http://www.w3.org/International/">Internationalization Activity</a> to give us a set of use cases for Ruby Annotation. These examples are viewable with Firefox and this <a href="http://piro.sakura.ne.jp/xul/_rubysupport.html.en">XPI extension for Ruby</a>.</p>
+
+<h4 id="date">Date</h4>
+
+<p>You might want to represent a date and give information about the different parts of the date on a package to be sure that no mistakes will be made.</p>
+
+<ul>
+	<li>Ruby base: Thursday 2 2 2006</li>
+	<li>Explanations: This is an expiration date with the following sequence: a day name, the day, the month and the year.</li>
+</ul>
+
+<p><a href="/QA/2006/02/ruby-examples.xhtml#date">See example</a></p>
+
+<h4 id="japanese">Japanese use</h4>
+
+<p>In Japan, when you learn the language, you may need to give the sound equivalent of the words in a specific scripting system, so readers will be able to pronounce it.</p>
+
+<ul>
+	<li>Base text: "日本"</li>
+	<li>Ruby as pronounciation description with Hiragana  "にほん", Katakana "ニホン" or Romaji "nihon"</li>
+</ul>
+<p>How to write it?</p>
+<pre>
+&lt;p&gt;&lt;ruby&gt;
+  &lt;rb&gt;&#26085;&#26412;&lt;/rb&gt;
+  &lt;rt&gt;nihon&lt;/rt&gt;
+&lt;/ruby&gt;&lt;/p&gt;
+</pre>
+<p><a href="/QA/2006/02/ruby-examples.xhtml#japanese">See example for the rendering.</a></p>
+
+
+<h4 id="chinese">Chinese use</h4>
+
+<p>In a similar way for chinese language.</p>
+<ul>
+	<li>Base text: 好</li>
+	<li>Ruby as pronunciation description with pin-yin "hao"</li>
+</ul>
+
+<p><a href="/QA/2006/02/ruby-examples.xhtml#chinese">See example</a></p>
+
+<h4 id="glossing">Linguistic morphological glossing</h4>
+<p>You might want to explain in a sentence which part is a noun and which part is a verb. For example, at school, when you teach grammar to children.</p>
+
+
+<ul>
+	<li>Base text: "I like fish"</li>
+	<li>Ruby as morphological glossing: Noun (for "I") Verb (for "like") Noun (for "fish")</li>
+</ul>
+
+<p><a href="/QA/2006/02/ruby-examples.xhtml#glossing">See example</a></p>
+
+<h4 id="invisible">Expression of "invisible" units in a text</h4>
+
+<p>The base text contains a Japanese sentence "Yesterday I went to Shibuya". The pronoun "I" is usually omitted in the original, which makes it hard to understand for e.g. beginning Japanese language learners.</p>
+
+<p>The ruby text above the base text explains what is omitted. The first ruby text line below the base text contains a romanized vesion. The second ruby text line below the base text contains morpho-lexical information. The abbreviations: "TM" means "topic marker", "DM" means "direction marker".</p>
+
+<p><a href="/QA/2006/02/ruby-examples.xhtml#invisible">See example</a></p>
+
+<h4 id="gesture">Adding information about gestures to conversation transcriptions</h4>
+
+<ul>
+	<li>Base text: "And we bought a biiiig icecream."</li>
+	<li>Ruby can be used to mark up "biiig" and to add information about gestures. It could be for example an image of someone making the gesture and big eyes.</li>
+</ul>
+
+<h4 id="word-boundaries">Expressing non-segmentable word boundaries</h4>
+
+<p>
+This is useful for</p>
+<ul>
+	<li>a contraction (Old High German, English, many other languages)</li>
+	<li>a compound word (Sanskrit, Avestan, many other languages)</li>
+	<li>a group of words whose forms have been affected by "euphonic" sandhi changes (Sanskrit, Breton)</li>
+	<li>a group of words in which, for orthographic or other reasons, the word junctions are not indicated (Sanskrit, Japanese)</li>
+</ul>
+
+<p>An example from Japanese:</p>
+
+<ul>
+	<li>base text: yo-mu (means: "reading in the base form"; with the Japanese syllabic script, the boundaries between the morphemes "yom" and "m" cannot be expressed)</li>
+	<li>Ruby for a segmentation of morphological boundaries: contains a romanized version of "yomu" with the correct boundaries "yom-mu".</li>
+</ul>
+
+<h3 id="implementations">Implementations: Sunny side-up?</h3>
+
+<p>Well not really for now. <cite><a href="http://annevankesteren.nl/">Anne Van Kesteren</a></cite> (Opera) in a recent post <cite><a href="http://annevankesteren.nl/2006/01/ruby">Ruby in HTML</a></cite> has looked at the implementation of Ruby in Internet Explorer.</p>
+<blockquote cite="http://annevankesteren.nl/2006/01/ruby">
+<p>Using the Live DOM Viewer I tried to figure out more or less how it works. Not everything is covered, but the basic parsing rules are here; simple research.</p>
+</blockquote>
+
+<p>We have not found an implementation report of Ruby in different browsers, user agents and in authoring tools (the too often forgotten ones). If someone could create an implementation report using the <a href="http://www.w3.org/People/mimasa/test/ruby/">Ruby Annotation Test Cases</a> developed by <cite><a href="http://www.w3.org/People/mimasa/" title="home page of ISHIKAWA, Masayasu">連絡先</a></cite> and also the <a href="http://www.w3.org/International/tests/#ruby">Ruby Test Cases</a> developed by Internationalization Activity, it would help to have a good picture of the implementation landscape. Simple Ruby annotations are <a href="http://www.w3.org/QA/2006/02/amaya-ruby-implementation" title="screenshot of ruby rendered in amaya browser/editor">implemented in Amaya</a>. There is also an <a href="http://piro.sakura.ne.jp/xul/_rubysupport.html.en">xpi extension for Ruby</a> which is available for Firefox and Mozilla and help to <a href="http://www.w3.org/QA/2006/02/ruby-annotation-firefox" title="screenshot of ruby rendered in firefox 1.5">visualize simple and complex ruby</a> annotation. Unfortunately it's not a native implementation in Mozilla rendering engine, which has still an <a href="https://bugzilla.mozilla.org/show_bug.cgi?id=33339">open issue for Ruby markup</a>.</p>
+
+<p>On the styling side, the CSS Working Group is working on a module called <cite><a href="http://www.w3.org/TR/css3-ruby/">CSS 3 Module for Ruby</a></cite> and <cite><a href="http://www.akatsukinishisu.net/itazuragaki/" title="kitamura home page">北村曉</a></cite> has published a way to style <a href="http://www.akatsukinishisu.net/itazuragaki/2001_10.html#ruby_for_Mozilla_3">ruby with CSS in Mozilla</a>.</p>
+
+<p>So we are not there yet, but I would say that almost all the information is available for helping developers to implement in their products but there are real benefits using ruby in a page. For example, we found this page giving a table which contains the <a href="http://www.i18nguy.com/unicode/unicode-example-ruby.html">birthplaces and native names of celebrities</a> (actors, singers, sports figures, etc.) in different languages. (to see with Firefox and the XPI extension).</p>
+
+<p>Any comments or additional information are welcome, specifically from the internationalization specialists… ;)</p>
+
+<h3 id="information">More information / Reminder</h3>
+
+<ul>
+       <li><a href="http://www.w3.org/International/questions/qa-ruby">FAQ: What is Ruby?</a></li>
+       <li><a href="http://www.w3.org/International/tutorials/ruby/">Tutorial: Ruby Markup and Styling</a></li>
+       <li><a href="http://www.w3.org/International/tests/#ruby">Test Materials for Ruby</a></li>
+	<li><a href="http://en.wikipedia.org/wiki/Ruby_characters">Ruby at Wikipedia</a></li>
+	<li><a href="http://www.w3.org/2003/03/Translations/OverviewRecs.html#ruby">Translations of Ruby Specification in different languages</a></li>
+	<li><a href="http://www.w3.org/QA/2006/02/ruby-annotation-firefox">Screenshot of ruby rendered in Firefox 1.5</a></li>
+	<li><a href="http://www.w3.org/QA/2006/02/amaya-ruby-implementation">Screenshot of ruby rendered in Amaya</a></li>
+        <li><a href="http://piro.sakura.ne.jp/xul/_rubysupport.html.en">XPI extension to have a rendering of ruby in Mozilla and Firefox</a></li>
+        <li><a href="http://www.w3.org/Amaya/User/BinDist.html">To download Amaya</a> which helps to visualize simple Ruby</li>
+</ul>]]></description>
+<dc:subject>HTML</dc:subject>
+<dc:creator>Karl Dubost</dc:creator>
+<dc:language>en</dc:language>
+<dc:date>2006-02-02T10:47:04+00:00</dc:date>
+</item>
+
+<item rdf:about="http://www.w3.org/QA/2006/01/quality_assurance_interest_gro.html">
+<title>Quality Assurance Interest Group meets at the W3C Technical Plenary 2006</title>
+<link>http://www.w3.org/QA/2006/01/quality_assurance_interest_gro.html</link>
+<description>        <![CDATA[<p>Once a year, W3C hosts a five day event, the <a href="http://www.w3.org/2005/12/allgroupoverview.html">W3C Technical Plenary</a>, where Working Groups (WG) and Interest Groups (IG) hold their face to face meetings in one place and have the opportunity to meet and liaise with participants from other groups. The <acronym title="Quality Assurance">QA</acronym> Interest Group meeting during this event is open to the public. </p>
+
+<p>You are welcome to join us  in Cannes, Mandelieu (France) from 27 February to 28 February 2006. <strong>Deadline for registration: February 16, 2006</strong></p>
+
+]]>
+        <![CDATA[<p>The <acronym title="Quality Assurance">QA</acronym> <a href="http://www.w3.org/QA/IG/">IG</a> is a group which is mainly composed of participants of the <a href="http://lists.w3.org/Archives/Public/www-qa/">www-qa</a>, <a href="http://lists.w3.org/Archives/Public/public-evangelist/">public-evangelist</a> and <a href="http://lists.w3.org/Archives/Public/public-qa-dev/">public-qa-dev</a> mailing-lists. It is a completely <strong>open group to the public</strong>. Anyone can participate and contribute to the publication of W3C IG Notes.</p>
+
+<p>During this meeting, we will try to address some points of this following preliminary agenda and maybe open new possible topics depending on the level of participation. </p>
+
+<h3 id="agenda">Agenda</h3>
+
+<ul>
+<li>Evangelization + W3C IG Notes: Plan for publication</li>
+<li>Curriculum for Web standards</li>
+<li>Validator*S*: Development, future, etc.</li>
+<li><a href="http://www.w3.org/TR/chips/">CHIPs</a> and <a href="http://www.w3.org/TR/cuap/">CUAP</a> Notes</li>
+<li>QA Findings ala <a href="http://www.w3.org/2001/tag/findings">TAG Findings</a>
+   <ul>
+      <li>Testable and non normative</li>
+      <li>Common EBNF for XML specs (See <cite><a href="http://lists.w3.org/Archives/Public/www-qa/2006Jan/0000.html">We need a EBNF spec</a></cite></li>
+      <li>etc.</li></ul></li>
+<li><a href="http://www.w3.org/2001/03/earl/">EARL</a> update and relations to QA</li>
+<li>Ongoing development of QA guidelines, tutorials, templates, etc.</li>
+<li><a href="http://www.w3.org/TR/test-metadata/">Test Case Metadata</a> (Concrete Schema)</li>
+<li><a href="http://www.w3.org/2003/glossary/">Glossary</a></li>
+<li>WAI coordination with QA</li>
+<li>Dummy Guide to Test Assertions</li>
+</ul>
+
+<p><a href="http://www.w3.org/2005/12/allgroupoverview.html#Registration">Please register now!</a> (before February 16, 2006)</p>]]></description>
+<dc:subject>QAIG Life</dc:subject>
+<dc:creator>Karl Dubost</dc:creator>
+<dc:language>en</dc:language>
+<dc:date>2006-01-31T22:21:00+00:00</dc:date>
+</item>
+
+<item rdf:about="http://www.w3.org/QA/2006/01/failed_commitments.html">
+<title>Failed Commitments?</title>
+<link>http://www.w3.org/QA/2006/01/failed_commitments.html</link>
+<description>        <![CDATA[<p>Do you remember? it was just three years ago or so. There were parades and brass bands. Many large Web sites were, at long last, making the switch to Web standards. For example, the Web designer <cite><a href="http://www.stopdesign.com/about/personnel/">Douglas Bowman</a></cite> was announcing the <a href="http://www.stopdesign.com/log/2002/10/11/finally-were-live.html">launch of the  XHTML, CSS, Validated Wired News</a> Web site.  That was great! That was a time of joy and feast. Groups like <a href="http://webstandards.org/">WASP</a> or <a href="http://www.maccaws.org/">MACCAWS</a>, Web professionals who believed in Web standards, who fought for them, were chanting the promises of better days, of a delightful rising sun on the horizon. </p>
+
+<p>And where are we now?</p>]]>
+        <![CDATA[<h3 id="failed-redesign">Failed Redesign</h3>
+
+<p>Recently, the unparagoned <cite><a href="http://blog.fawny.org/">Joe Clark</a></cite> has published an article about companies which have recently <a href="http://blog.fawny.org/2006/01/04/failed/">decided to redesign their Web sites and somehow failed</a>. </p>
+
+<blockquote cite="http://blog.fawny.org/2006/01/04/failed/">
+<p>A failed redesign is a Web page created from scratch, or substantially updated, during the era of Web standards that nonetheless ignores or misuses those standards. A failed redesign pretends that valid code and accessibility guidelines do not exist; it pretends that the 21st century is frozen in the amber of the year 1999. It indicates not merely unprofessional Web-development practices but outright incompetence. For if you are producing tag-soup code and using tables for layout in the 21st century, that’s what you are: Incompetent.</p>
+</blockquote>
+
+<p>What this reminds us, is that redesigning a Web site is not only a question of using XHTML and CSS, but using them in the appropriate way thinking about semantics, accessibility, internationalization, etc. In Jazz, you could put together the best jazz cellist and pianist together and still end in a monstruous cacophony. They have to be in harmony, they have to get their improvisation right. In Web design, you can improvise, you can create, but you have to be in harmony if you don't want to turn your blue note cave into a business catastrophe.</p>
+
+<p>But that's not all! It's not enough to get it right once, to give one enjoyable jam for the audience... You have to give a good performance every. single. night. Oh! Of course a little quack, sometimes might not be such a problem, it will just remind that we are all humans. But a continuous sequence of quacks only shows your impressive ability to impersonate a gaggle of ducks.</p>
+
+<h3 id="failed">Failed Commitments</h3>
+
+<p><cite><a href="http://www.zeldman.com/">Jeffrey Zeldman</a></cite>,  in his talk about <cite><a href="http://www.happycog.com/lectures/dwws/">Designing with Web Standards</a></cite>, had a list of Web sites which, a few years ago, had finally decided to go live with a new design, with an exciting redesign. They were examples of companies which had made the switch to Web standards. Trumpets in the sky, we could hear them.</p>
+
+<table>
+	<tr>
+		<th>Web site</th> <th>Validation</th>
+	</tr>
+	<tr>
+		<td><a href="http://www.foxsearchlight.com/">Fox SearchLight</a></td> <td class="failed">Failed</td>
+	</tr>
+	<tr>
+		<td><a href="http://www.k10k.net/">K10K</a></td> <td class="failed">Failed</td>
+	</tr>
+	<tr>
+		<td><a href="http://navy.com/">Navy</a></td> <td class="valid">Valid</td>
+	</tr>
+	<tr>
+		<td><a href="http://www.inc.com/">Inc.com</a></td> <td class="failed">Failed</td>
+	</tr>
+	<tr>
+		<td><a href="http://www.espn.com/">ESPN</a></td> <td class="failed">Failed</td>
+	</tr>
+	<tr>
+		<td><a href="http://www.wired.com/">Wired</a></td> <td class="failed">Failed</td>
+	</tr>
+	<tr>
+		<td><a href="http://www.pga.com/openchampionship/">PGA</a></td> <td class="failed">Failed</td>
+	</tr>
+	<tr>
+		<td><a href="http://www.quark.com/">Quark Inc.</a></td> <td class="failed">Failed</td>
+	</tr>
+       <tr><td colspan="2" class="note">Note 1: These results have been collected during January 2006, and they may change in the future.<br/>
+Note 2: The homepage is a poor indicator of the validity of a whole Web site.</td></tr>
+</table>
+
+<p>Is there hope?</p>
+
+<h3 id="never">Never Stops The Music</h3>
+
+<p>Making a valid, accessible Web site is only the beginning of the music. Most sites, good or bad, are living things: pages are added, content is updated, reorganized sometimes. It's unlikely that it will be kept as is, clean and polished, unless you put a continous quality process in place. Just keep the music flowing.</p>
+
+<p>Unlike in Jazz, it doesn't really take greatness to always play Web Design right: it's okay to make mistakes, because it's always possible to come back and fix the mistakes. And with a little discipline and a few good tools, it gets really trivial.</p>
+
+<p>The <a href="http://www.w3.org/QA/Tools/LogValidator/">LogValidator</a> is a tool which might help  in this task. It's simple, it's extensible to one's own needs and it can be tweaked to meet the internal requirements of any company. How? Just read <cite><a href="http://www.w3.org/QA/2002/09/Step-by-step">Making your website valid: a step by step guide</a></cite> and <cite><a href="http://www.w3.org/QA/2003/03/web-kit">Web Standards Switch</a></cite>.</p>
+
+<blockquote><p>There are wonderful things in real jazz, the talent for improvisation, the liveliness, the being at one with the audience.</p>
+<p><cite><a href="http://en.wikipedia.org/wiki/Henri_Matisse">Henri Matisse</a></cite></p>
+</blockquote>
+<p>There are wonderful things in real Web design, the many ways to convey information, the being at one with the readers... and the fact that a failure can always be worked upon and fixed.</p>
+
+]]></description>
+<dc:subject>Opinions &amp; Editorial</dc:subject>
+<dc:creator>Karl Dubost</dc:creator>
+<dc:language>en</dc:language>
+<dc:date>2006-01-30T01:12:30+00:00</dc:date>
+</item>
+
+<item rdf:about="http://www.w3.org/QA/2005/11/w3c_renews_quality_assurance_i.html">
+<title>W3C Renews Quality Assurance Interest Group</title>
+<link>http://www.w3.org/QA/2005/11/w3c_renews_quality_assurance_i.html</link>
+<description>        <![CDATA[<p>W3C is pleased to announce the renewal of the <a href="/QA/">Quality Assurance Activity</a> and the <a href="/QA/IG/">QA Interest Group</a>, chaired by Karl Dubost (W3C) and Lynne Rosenthal (NIST). The main objective of the QA Interest Group (QA IG) is to provide a venue for W3C, its Membership, and the Web community to share their experiences and involvement with QA. Participation is open to <a href="/Consortium/Member/List">W3C<br />
+Members</a> and the public.</p>]]>
+        </description>
+<dc:subject>QAIG Life</dc:subject>
+<dc:creator>Karl Dubost</dc:creator>
+<dc:language>en</dc:language>
+<dc:date>2005-11-28T00:16:25+00:00</dc:date>
+</item>
+
+<item rdf:about="http://www.w3.org/QA/2005/10/markup_validator_071.html">
+<title>Markup Validator 0.7.1</title>
+<link>http://www.w3.org/QA/2005/10/markup_validator_071.html</link>
+<description>        <![CDATA[<p>New release of the <a href="http://validator.w3.org/">W3C Markup Validator</a> (<abbr title="also known as">a.k.a</abbr> HTML Validator). Introducing performance enhancements and including minor fixes  in the user interface and in the "Direct Input" validation results.<br />
+Read the <a href="http://lists.w3.org/Archives/Public/www-validator/2005Oct/0055.html">announcement</a> for details.</p>]]>
+        </description>
+<dc:subject>Tools</dc:subject>
+<dc:creator>Karl Dubost</dc:creator>
+<dc:language>en</dc:language>
+<dc:date>2005-10-18T00:22:24+00:00</dc:date>
+</item>
+
+<item rdf:about="http://www.w3.org/QA/2005/09/css_validator_updated.html">
+<title>CSS Validator updated</title>
+<link>http://www.w3.org/QA/2005/09/css_validator_updated.html</link>
+<description>        <![CDATA[<p>The latest update of the <a href="http://jigsaw.w3.org/css-validator/">W3C CSS Validation Service</a> includes a stable SOAP access and output to the CSS validator, the addition of a profile for the CSS 2.1 specification, and a large number of bug fixes.   Read the <a href="http://lists.w3.org/Archives/Public/www-validator-css/2005Sep/0014">announcement</a> for details.</p>]]>
+        </description>
+<dc:subject>Tools</dc:subject>
+<dc:creator>Karl Dubost</dc:creator>
+<dc:language>en</dc:language>
+<dc:date>2005-09-16T00:36:49+00:00</dc:date>
+</item>
+
+<item rdf:about="http://www.w3.org/QA/2005/09/log_validator_10.html">
+<title>Log Validator 1.0</title>
+<link>http://www.w3.org/QA/2005/09/log_validator_10.html</link>
+<description>        <![CDATA[<p>Release of the W3C <a href="http://www.w3.org/QA/Tools/LogValidator/">Log Validator</a> version 1.0. The Log Validator makes it easy to manage the quality of even large Web Sites,step by step, by finding  the most popular documents failing Markup or CSS validation, or withbroken links. Read the <a  href="http://lists.w3.org/Archives/Public/www-validator/2005Sep/0029.html">announcement</a> for details.</p>]]>
+        </description>
+<dc:subject>Tools</dc:subject>
+<dc:creator>Karl Dubost</dc:creator>
+<dc:language>en</dc:language>
+<dc:date>2005-09-09T00:38:53+00:00</dc:date>
+</item>
+
+<item rdf:about="http://www.w3.org/QA/2005/09/the_qa_handbook_published_as_a.html">
+<title>The QA Handbook published as a W3C Working Group Note</title>
+<link>http://www.w3.org/QA/2005/09/the_qa_handbook_published_as_a.html</link>
+<description>        <![CDATA[<p><cite><a href="http://www.w3.org/TR/2005/NOTE-qa-handbook-20050906/">The QA Handbook</a></cite>,   designed to facilitate and accelerate the work of W3C Working Groups, has been updated and published as a W3C Working Group Note.</p>]]>
+        </description>
+<dc:subject>Publications</dc:subject>
+<dc:creator>Karl Dubost</dc:creator>
+<dc:language>en</dc:language>
+<dc:date>2005-09-06T00:42:02+00:00</dc:date>
+</item>
+
+<item rdf:about="http://www.w3.org/QA/2005/09/qa_at_w3c_continues_future_of.html">
+<title>QA at W3C continues: future of the QAIG</title>
+<link>http://www.w3.org/QA/2005/09/qa_at_w3c_continues_future_of.html</link>
+<description>        <![CDATA[<p>With a number of documents published in the past few days and more to come soon, W3C's  QA Activity, and the QA Working group have reached the end of their charter. But W3C's commitment to quality continues! In a message to the <acronym title="Quality Assurance Interest Group">QAIG</acronym> mailing-list, Karl Dubost explains <a href="http://lists.w3.org/Archives/Public/www-qa/2005Sep/0001.html">what the future holds for QA at W3C in general, and the QA IG in particular</a>.</p>]]>
+        </description>
+<dc:subject>QAIG Life</dc:subject>
+<dc:creator>Karl Dubost</dc:creator>
+<dc:language>en</dc:language>
+<dc:date>2005-09-06T00:40:37+00:00</dc:date>
+</item>
+
+<item rdf:about="http://www.w3.org/QA/2005/08/variability_in_specifications.html">
+<title>Variability in Specifications published as a W3C Working Group Note</title>
+<link>http://www.w3.org/QA/2005/08/variability_in_specifications.html</link>
+<description>        <![CDATA[<p><cite><a href="http://www.w3.org/TR/2005/NOTE-spec-variability-20050831/">Variability in Specifications</a></cite>,  a companion to the <cite><a  href="http://www.w3.org/TR/qaframe-spec/">QA Framework: Specification Guidelines</a></cite>, has been updated and published as a W3C Working Group Note. The Note contains advanced specification  design considerations and conformance-related techniques. It describes how design of a specification's  conformance model affects implementability and interoperability.</p>]]>
+        </description>
+<dc:subject>Publications</dc:subject>
+<dc:creator>Karl Dubost</dc:creator>
+<dc:language>en</dc:language>
+<dc:date>2005-08-30T00:46:17+00:00</dc:date>
+</item>
+
+<item rdf:about="http://www.w3.org/QA/2005/08/qa_framework_specification_gui.html">
+<title>QA Framework: Specification Guidelines is a W3C Recommendation</title>
+<link>http://www.w3.org/QA/2005/08/qa_framework_specification_gui.html</link>
+<description>        <![CDATA[<p><cite><a href="http://www.w3.org/TR/2005/REC-qaframe-spec-20050817/">QA Framework:  Specification Guidelines</a></cite>, the main document produced by the <a href="http://www.w3.org/QA/WG/">QA Working Group</a> has been published as a W3C Recommendation on August 17. Publication as a <a href="http://www.w3.org/2004/02/Process-20040205/tr.html#RecsW3C">W3C Recommendation</a> is the sign that this document has received the endorsement of W3C Members and the Director. See also the <a href="http://www.w3.org/2005/08/qa-pressrelease">related press release</a>.</p>]]>
+        </description>
+<dc:subject>Publications</dc:subject>
+<dc:creator>Karl Dubost</dc:creator>
+<dc:language>en</dc:language>
+<dc:date>2005-08-18T00:47:43+00:00</dc:date>
+</item>
+
+<item rdf:about="http://www.w3.org/QA/2005/08/w3c_markup_validator_v070_rele.html">
+<title>W3C Markup Validator v0.7.0 released</title>
+<link>http://www.w3.org/QA/2005/08/w3c_markup_validator_v070_rele.html</link>
+<description>        <![CDATA[<p>New release of the <a href="http://validator.w3.org/">W3C Markup Validator</a> (<abbr title="also known as">a.k.a</abbr> HTML Validator). Includes usability  enhancements, improved <a href="http://validator.w3.org/feedback.html">feedback</a>, support for installation on Windows, and better support for both W3C and non-W3C document types.</p>]]>
+        </description>
+<dc:subject>Tools</dc:subject>
+<dc:creator>Karl Dubost</dc:creator>
+<dc:language>en</dc:language>
+<dc:date>2005-08-08T00:49:07+00:00</dc:date>
+</item>
+
+<item rdf:about="http://www.w3.org/QA/2005/05/wasp_asks_w3c_adding_multimedi.html">
+<title>“WaSP asks W3C”, Adding Multimedia in Web Documents (part 2) published</title>
+<link>http://www.w3.org/QA/2005/05/wasp_asks_w3c_adding_multimedi.html</link>
+<description>        <![CDATA[<p>Last week, in a new instance of the <a href="http://www.w3.org/QA/Library/WaW">WaSP asks W3C</a> project, the QA Team completed its answer on <cite><a  href="http://webstandards.org/learn/askw3c/jun2004.html">Adding Multimedia in Web Documents</a></cite> with <a href="http://webstandards.org/learn/askw3c/may2005.html">more details on the use and implementation of the <code>object</code> tag</a> in HTML. Discussion and debate are welcome on the  <a href="http://lists.w3.org/Archives/Public/public-evangelist/">public-evangelist</a> mailing list.</p>]]>
+        </description>
+<dc:subject>Tutorials</dc:subject>
+<dc:creator>Karl Dubost</dc:creator>
+<dc:language>en</dc:language>
+<dc:date>2005-05-31T00:50:41+00:00</dc:date>
+</item>
+
+<item rdf:about="http://www.w3.org/QA/2005/05/test_faq.html">
+<title>Test FAQ</title>
+<link>http://www.w3.org/QA/2005/05/test_faq.html</link>
+<description>        <![CDATA[<p>The <a href="http://www.w3.org/QA/WG/">QA Working Group</a> has released a <cite><a href="http://www.w3.org/QA/WG/2005/01/test-faq">Test <abbr title="Frequently Asked Questions">FAQ</abbr></a></cite>. The 17 questions it addresses match the different topics the QA Working Group has found particularly important for most Working Groups in W3C and incorporate examples and ideas from various existing testing efforts in W3C.</p>]]>
+        </description>
+<dc:subject>Publications</dc:subject>
+<dc:creator>Karl Dubost</dc:creator>
+<dc:language>en</dc:language>
+<dc:date>2005-05-11T01:00:34+00:00</dc:date>
+</item>
+
+<item rdf:about="http://www.w3.org/QA/2005/05/more_about_custom_dtd_article.html">
+<title>“More About Custom DTD” article published in A List Apart</title>
+<link>http://www.w3.org/QA/2005/05/more_about_custom_dtd_article.html</link>
+<description>        <![CDATA[<p>The QA Team has written an article for <a href="http://www.alistapart.com/">A List Apart</a>, entitled <cite><a href="http://www.alistapart.com/articles/customdtds2/">More About Custom DTDs</a></cite>, explaining when custom DTDs make sense, and when they don't.</p>]]>
+        </description>
+<dc:subject>Tutorials</dc:subject>
+<dc:creator>Karl Dubost</dc:creator>
+<dc:language>en</dc:language>
+<dc:date>2005-05-11T00:57:12+00:00</dc:date>
+</item>
+
+<item rdf:about="http://www.w3.org/QA/2005/04/link_checker_update_version_42.html">
+<title>Link Checker update (version 4.2)</title>
+<link>http://www.w3.org/QA/2005/04/link_checker_update_version_42.html</link>
+<description>        <![CDATA[<p>W3C's free Link Checker was updated with a new bug fix release which includes accessibility improvements for the tool's Web interface. <a href="http://validator.w3.org/checklink">Use the link checking service online</a> or check the <a href="http://www.w3.org/mid/20050428064855.GA1153@w3.mag.keio.ac.jp">release announcement</a> for download information.</p>]]>
+        </description>
+<dc:subject>Tools</dc:subject>
+<dc:creator>Karl Dubost</dc:creator>
+<dc:language>en</dc:language>
+<dc:date>2005-04-28T01:03:17+00:00</dc:date>
+</item>
+
+<item rdf:about="http://www.w3.org/QA/2005/04/specification_guidelines_and_v.html">
+<title>Specification Guidelines and Variability in Specifications updated</title>
+<link>http://www.w3.org/QA/2005/04/specification_guidelines_and_v.html</link>
+<description>        <![CDATA[<p>The <a href="http://www.w3.org/QA/WG/">QA Working Group</a> has published an update of two of its documents: <cite><a href="http://www.w3.org/TR/2005/WD-qaframe-spec-20050428/">QA Framework: Specification Guidelines</a></cite> and <cite><a href="http://www.w3.org/TR/2005/WD-spec-variability-20050428/">Variability in Specifications</a></cite>. The new version of <cite>Specification Guidelines</cite> includes the resolutions of the comments received during the Last Call period, and is the last version before the Working Group requests Proposed Recommendation status to the W3C Director.</p>]]>
+        </description>
+<dc:subject>Publications</dc:subject>
+<dc:creator>Karl Dubost</dc:creator>
+<dc:language>en</dc:language>
+<dc:date>2005-04-28T01:01:55+00:00</dc:date>
+</item>
+
+<item rdf:about="http://www.w3.org/QA/2005/04/new_article_ampersands_php_ses.html">
+<title>New Article: Ampersands, PHP Sessions and Valid HTML</title>
+<link>http://www.w3.org/QA/2005/04/new_article_ampersands_php_ses.html</link>
+<description>        <![CDATA[<p>A new technical article on the topic of <a href="http://www.w3.org/QA/2005/04/php-session">Ampersands, PHP Sessions and Valid HTML</a> was published by the QAIG, courtesy of <a href="http://dorward.me.uk/">David Dorward</a>. The QA Interest Group welcomes such contribution of material, see our <a href="http://www.w3.org/QA/2003/06/Contrib">Contribution Guidelines</a> for details.</p>]]>
+        </description>
+<dc:subject>Publications</dc:subject>
+<dc:creator>Karl Dubost</dc:creator>
+<dc:language>en</dc:language>
+<dc:date>2005-04-26T01:04:08+00:00</dc:date>
+</item>
+
+<item rdf:about="http://www.w3.org/QA/2005/02/qa_wg_f2f_at_the_technical_ple.html">
+<title>QA WG F2F at the Technical Plenary 2005</title>
+<link>http://www.w3.org/QA/2005/02/qa_wg_f2f_at_the_technical_ple.html</link>
+<description>        <![CDATA[<p>The QA WG and IG will have their face to face meeting in Boston, MA, during the W3C Technical Plenary 2005. If you have been an active participant of the QA IG, you might want to contact the QA IG chairs to be invited.</p>]]>
+        </description>
+<dc:subject>Meetings</dc:subject>
+<dc:creator>Karl Dubost</dc:creator>
+<dc:language>en</dc:language>
+<dc:date>2005-02-16T01:10:12+00:00</dc:date>
+</item>
+
+<item rdf:about="http://www.w3.org/QA/2005/02/css_validator_available_in_spa.html">
+<title>CSS Validator available in Spanish</title>
+<link>http://www.w3.org/QA/2005/02/css_validator_available_in_spa.html</link>
+<description>        <![CDATA[<p>W3C's open source <a href="http://jigsaw.w3.org/css-validator/">CSS Validator</a> is now available in Spanish language, thanks to the translation work of the <a href="http://www.w3c.es/" hreflang="es">W3C Spanish office</a>. The CSS Validator is also <a href="http://jigsaw.w3.org/css-validator/thanks.html">available in English, Chinese, French, German, Italian, Japanese and Russian</a>.</p>]]>
+        </description>
+<dc:subject>CSS</dc:subject>
+<dc:creator>Karl Dubost</dc:creator>
+<dc:language>en</dc:language>
+<dc:date>2005-02-16T01:08:54+00:00</dc:date>
+</item>
+
+
+
+</rdf:RDF>
